@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>MEDITATION</title>
+<link rel="stylesheet" href="styl.css">  
+</head>
+<body>
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="images/newwmedi.png">
+            </div>
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+            
+            </ul>
+        </div>
+    </nav>
+</div>
+    <div class="information">
+        <div class="overlay">
+        </div>
+        <img src="images/neww.png" class="meditation">
+    <div id="circle">
+      <div class="feature one">
+       <div><h1>Mindful Meditation</h1>
+            <p> It is the process of being 
+            fully present with your thoughts. Being mindful means being 
+            aware of where we are and what we’re doing, and not being 
+            overly reactive to what’s going on around us. When practicing
+            mindfulness meditation, you observe your thoughts and emotions 
+            but let them pass without judgement</p>
+
+    </div>
+      </div>
+      <div class="feature two">
+          <div><h1>Transcendental 
+              Meditation</h1>
+        <p>It is a simple technique in which a personally 
+            assigned mantra, such as a word, or small phrase, 
+            is repeated in a specific way.
+            It’s practiced 20 minutes twice each day while sitting 
+            comfortably with the eyes closed</p>
+        </div>
+      </div>
+      <div class="feature three">
+          <div><h1>Loving Kindness Meditation</h1>
+        <p> It is the practice of directing well wishes toward others. 
+            Those who practice recite specific words and phrases 
+            meant to evoke warm-hearted feelings</p>
+        </div>
+      </div>
+      <div class="feature four">
+          <div><h1>Yoga Meditation</h1>
+        <p>The practice of yoga dates back to ancient India.
+            There are a wide variety of classes and styles of yoga,
+            but they all involve performing a series of postures 
+            and controlled breathing exercises meant
+            to promote flexibility and calm the mind</p></div>
+      </div>
+</div>
+</div>
+
+
+</div>
+<div class="controls">
+    <img src="images/upA.png" id="upBtn">
+    <h3>Features</h3>
+    <img src="images/DownA.png" id="downBtn">
+</div>
+<script>
+       var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+        
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum; 
+        } 
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum; 
+        } 
+        </script>
+        
+
+</body>
+</html>
